@@ -1,0 +1,70 @@
+Lacuna semântica (o quão distante é o significado do problema e da solução)
+Problema <-------> Solução
+
+Na orientação a objetos, há uma redução da lacuna semântica. Em outras palavras, a solução é muito mais próximo do problema.
+
+# Requisitos
+
+
+
+# Identificação de tipos
+
+## Organização de dados
+bomba um tanque de etanol, gasolina e ou a diesel 
+podem existir bombas so de etanol, so de gasolina ou qualquer outra combinaçao
+contagem total de cada combustivel que ela ja abasteceu
+A loja deseja saber:
+placa do veiculo que ja abasteceu
+combustivel abastecido (tipo)
+quantidade de litros
+quanto o cliente pagou pelo litro
+deve ser possivel saber qual combustivel foi o mais abastrecido numa bomba
+
+bomba: possui um tanque; contagem do total de cada combustível que ela já abasteceu; combustivel mais usado(total em litros);
+tanque: etanol, gasolina e ou diesel; 
+cliente: placa do veículo que abasteceu; combustivel abastecido; quantidade de litros;
+principal: bomba foi a mais usada do posto
+
+bomba: sim
+tanque: sim
+cliente: sim
+
+Classes:
+
+PostoDeGasolina
+BombaDeCombustivel
+Tanque
+Cliente
+Abastecimento
+Atributos:
+
+PostoDeGasolina:
+
+Nome (string)
+Localizacao (string)
+Lista de BombasDeCombustivel
+
+BombaDeCombustivel:
+
+Numero (int)
+Lista de Tanques
+Contagem de combustivel abastecido (dicionário que armazena o total de combustível abastecido em cada tanque)
+
+Tanque:
+
+Tipo de combustivel (string)
+Capacidade (int)
+Quantidade de combustivel atual (int)
+
+Cliente:
+
+Nome (string)
+Placa do veículo (string)
+
+Abastecimento:
+
+Cliente (instância de Cliente)
+BombaDeCombustivel (instância de BombaDeCombustivel)
+Tipo de combustível (string)
+Quantidade de litros (float)
+Preço por litro (float)
